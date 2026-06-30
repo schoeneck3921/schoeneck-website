@@ -81,7 +81,7 @@ p.bold-serif{font-family:var(--fd);font-size:1.05rem;font-weight:500;color:var(-
 .on-dark p.body,.on-dark p.lead{color:rgba(248,246,242,.72)}
 
 /* ── SECTIONS ── */
-.sec{padding-block:110px}
+.sec{padding-block:90px}
 .sec-sand{background:var(--sand)}
 .sec-green{background:var(--grn)}
 .sec-dark{background:var(--dark)}
