@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="utf-8">
   <title>Schöneck – Wenn du schon vieles versucht hast.</title>
   <meta name="description" content="Schöneck ist ein Lebensraum für Menschen, die schon vieles versucht haben – und wieder spüren möchten, was für sie richtig ist.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,52 +11,67 @@
   <meta property="og:description" content="Ein Ort, an dem Menschen sich selbst wieder begegnen können – mit Pferden, Natur und ehrlicher Begleitung.">
   <meta property="og:url" content="https://shiny-zuccutto-8ceeb3.netlify.app/">
   <meta property="og:image" content="https://shiny-zuccutto-8ceeb3.netlify.app/assets/logo.png">
-  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
-<header class="header">
-  <div class="container header-grid">
-    <a href="/" class="logo">
-      <img src="/assets/logo.png" alt="Schöneck – zurück zu den Wurzeln">
+
+<header class="hdr">
+  <div class="hc">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Schöneck – zurück zu den Wurzeln">
     </a>
     <nav class="nav">
       <ul>
-        <li class="active"><a href="/">Start</a></li>
-        <li><a href="/erwachsene/">Erwachsene</a></li>
-        <li><a href="/paare/">Paare</a></li>
-        <li><a href="/kinder-jugendliche/">Kinder & Jugendliche</a></li>
-        <li><a href="/eltern/">Eltern</a></li>
-        <li><a href="/pflegeeltern/">Pflegeeltern</a></li>
-        <li><a href="/unternehmen/">Unternehmen</a></li>
-        <li><a href="/warum-schoeneck/">Warum Schöneck</a></li>
-        <li><a href="/perspektiven/">Perspektiven</a></li>
-        <li><a href="/kontakt/">Kontakt</a></li>
+        <li class="active"><a href="index.html">Start</a></li>
+        <li><a href="erwachsene.html">Erwachsene</a></li>
+        <li><a href="paare.html">Paare</a></li>
+        <li><a href="kinder-jugendliche.html">Kinder & Jugendliche</a></li>
+        <li><a href="eltern.html">Eltern</a></li>
+        <li><a href="pflegeeltern.html">Pflegeeltern</a></li>
+        <li><a href="unternehmen.html">Unternehmen</a></li>
       </ul>
     </nav>
+    <button class="navmob-btn" type="button" onclick="toggleMob()">Menü</button>
   </div>
+  <nav class="navmob" id="navmob">
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="erwachsene.html">Erwachsene</a></li>
+      <li><a href="paare.html">Paare</a></li>
+      <li><a href="kinder-jugendliche.html">Kinder & Jugendliche</a></li>
+      <li><a href="eltern.html">Eltern</a></li>
+      <li><a href="pflegeeltern.html">Pflegeeltern</a></li>
+      <li><a href="unternehmen.html">Unternehmen</a></li>
+      <li><a href="warum-schoeneck.html">Warum Schöneck</a></li>
+      <li><a href="perspektiven.html">Perspektiven</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
 
-<section class="hero section">
-  <div class="container narrow">
-    <p class="kicker">Wenn du schon vieles versucht hast.</p>
-    <h1>Nicht, weil nichts geholfen hat. Sondern weil du trotzdem immer wieder an denselben Punkt zurückkommst.</h1>
-    <p class="lead">
-      Schöneck ist ein Lebensraum für Menschen, die sich selbst wieder begegnen möchten. Ein Ort, an dem du loslassen,
-      zur Ruhe kommen und spüren kannst, was für dich gerade wirklich wichtig ist.
-    </p>
-    <div class="btnrow">
-      <a href="/kontakt/" class="btn primary">Aufenthalt anfragen</a>
-      <a href="/warum-schoeneck/" class="btn secondary">Mehr über Schöneck</a>
+<section class="hero" data-f>
+  <div class="hc hero-inner">
+    <div class="hero-text">
+      <p class="kicker">Wenn du schon vieles versucht hast.</p>
+      <h1>Nicht, weil nichts geholfen hat. Sondern weil du trotzdem immer wieder an denselben Punkt zurückkommst.</h1>
+      <p class="lead">
+        Schöneck ist ein Lebensraum für Menschen, die sich selbst wieder begegnen möchten. Ein Ort, an dem du loslassen,
+        zur Ruhe kommen und spüren kannst, was für dich gerade wirklich wichtig ist.
+      </p>
+      <div class="btnrow">
+        <a href="kontakt.html" class="btn primary">Aufenthalt anfragen</a>
+        <a href="warum-schoeneck.html" class="btn secondary">Mehr über Schöneck</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container grid two">
+<section class="sec" data-f>
+  <div class="hc sec-inner grid two">
     <div>
-      <div class="kicker">Viele haben schon einiges versucht</div>
+      <p class="kicker">Viele haben schon einiges versucht</p>
       <h2>Es hilft immer nur ein bisschen.</h2>
       <p class="lead">
         Viele Menschen kommen zu uns, nachdem sie schon vieles versucht haben: Gespräche, Therapie, Beratung, Bücher,
@@ -79,9 +93,9 @@
   </div>
 </section>
 
-<section class="section bands">
-  <div class="container">
-    <div class="kicker">Ein Ort, der dich trägt</div>
+<section class="sec bands" data-f>
+  <div class="hc">
+    <p class="kicker">Ein Ort, der dich trägt</p>
     <h2>Was Schöneck ausmacht.</h2>
     <div class="grid three cards">
       <div class="card flat">
@@ -100,48 +114,48 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="kicker">Bereiche</div>
+<section class="sec" data-f>
+  <div class="hc">
+    <p class="kicker">Bereiche</p>
     <h2>Für wen Schöneck ein guter Ort sein kann.</h2>
     <div class="grid three cards">
       <div class="card">
         <h3>Erwachsene & Auszeit</h3>
         <p>Für Menschen, die innehalten und aus dem Funktionieren in ein ehrliches Spüren kommen möchten.</p>
-        <a href="/erwachsene/" class="more">Mehr erfahren →</a>
+        <a href="erwachsene.html" class="more">Mehr erfahren →</a>
       </div>
       <div class="card">
         <h3>Paare</h3>
         <p>Wenn Gespräche im Alltag nicht mehr weiterführen und eine Beziehung Raum außerhalb der gewohnten Dynamik braucht.</p>
-        <a href="/paare/" class="more">Mehr erfahren →</a>
+        <a href="paare.html" class="more">Mehr erfahren →</a>
       </div>
       <div class="card">
         <h3>Kinder & Jugendliche</h3>
         <p>Wenn ein Kind aus dem Gleichgewicht ist – und es Begleitung braucht, die nicht nur auf Verhalten schaut.</p>
-        <a href="/kinder-jugendliche/" class="more">Mehr erfahren →</a>
+        <a href="kinder-jugendliche.html" class="more">Mehr erfahren →</a>
       </div>
       <div class="card">
         <h3>Eltern</h3>
         <p>Für Mütter, Väter und Bezugspersonen, die nicht mehr weiterwissen und trotzdem bei ihrem Kind bleiben wollen.</p>
-        <a href="/eltern/" class="more">Mehr erfahren →</a>
+        <a href="eltern.html" class="more">Mehr erfahren →</a>
       </div>
       <div class="card">
         <h3>Pflegeeltern & Pflegekinder</h3>
         <p>Wenn Liebe nicht reicht – und Vergangenheit, Systeme und Loyalitäten mit im Raum stehen.</p>
-        <a href="/pflegeeltern/" class="more">Mehr erfahren →</a>
+        <a href="pflegeeltern.html" class="more">Mehr erfahren →</a>
       </div>
       <div class="card">
         <h3>Unternehmen & Teams</h3>
         <p>Für Führungskräfte und Teams, die jenseits von PowerPoint an echten Dynamiken arbeiten wollen.</p>
-        <a href="/unternehmen/" class="more">Mehr erfahren →</a>
+        <a href="unternehmen.html" class="more">Mehr erfahren →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section bands">
-  <div class="container">
-    <div class="kicker">Dein Weg nach Schöneck</div>
+<section class="sec bands" data-f>
+  <div class="hc">
+    <p class="kicker">Dein Weg nach Schöneck</p>
     <h2>Wie ein Aufenthalt aussehen kann.</h2>
     <div class="grid two">
       <div>
@@ -160,8 +174,8 @@
   </div>
 </section>
 
-<section class="section testimonial">
-  <div class="container narrow center">
+<section class="sec testimonial" data-f>
+  <div class="hc narrow center">
     <blockquote>
       „Ich habe hier nicht nur neue Kraft gefunden, sondern auch gelernt, wieder auf mich selbst zu vertrauen.“
     </blockquote>
@@ -169,10 +183,10 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container grid two">
+<section class="sec" data-f>
+  <div class="hc grid two">
     <div>
-      <div class="kicker">Perspektiven</div>
+      <p class="kicker">Perspektiven</p>
       <h2>Weiterlesen, wenn du dich wiedererkennst.</h2>
       <p class="lead">
         Unsere Perspektiven sind keine schnellen Tipps. Sie sollen helfen, das eigene Erleben besser einzuordnen –
@@ -180,56 +194,81 @@
       </p>
     </div>
     <div class="card">
-      <a class="more" href="/perspektiven/mein-kind-redet-nicht-mehr/">Mein Kind redet nicht mehr →</a><br>
-      <a class="more" href="/perspektiven/wenn-eltern-nicht-mehr-weiterwissen/">Wenn Eltern nicht mehr weiterwissen →</a><br>
-      <a class="more" href="/perspektiven/wenn-paare-sich-verlieren/">Wenn Paare sich verlieren →</a><br>
-      <a class="more" href="/perspektiven/fuehrungskraft-funktioniert-nur-noch/">Führungskraft funktioniert nur noch →</a><br>
+      <a class="more" href="perspektiven/mein-kind-redet-nicht-mehr.html">Mein Kind redet nicht mehr →</a><br>
+      <a class="more" href="perspektiven/wenn-eltern-nicht-mehr-weiterwissen.html">Wenn Eltern nicht mehr weiterwissen →</a><br>
+      <a class="more" href="perspektiven/wenn-paare-sich-verlieren.html">Wenn Paare sich verlieren →</a><br>
+      <a class="more" href="perspektiven/fuehrungskraft-funktioniert-nur-noch.html">Führungskraft funktioniert nur noch →</a><br>
     </div>
   </div>
 </section>
 
-<section class="section bands">
-  <div class="narrow center">
-    <div class="kicker">Der nächste Schritt</div>
+<section class="sec bands" data-f>
+  <div class="hc narrow center">
+    <p class="kicker">Der nächste Schritt</p>
     <h2>Du musst heute noch nichts entscheiden.</h2>
     <p class="lead">
       Wenn du das Gefühl hast, dass Schöneck gerade der richtige Ort sein könnte, schreib uns.
       Gemeinsam finden wir heraus, ob und wie wir dich begleiten können.
     </p>
     <div class="btnrow" style="justify-content:center">
-      <a class="btn primary" href="/kontakt/">Aufenthalt anfragen</a>
-      <a class="btn secondary" href="/warum-schoeneck/">Mehr über Schöneck</a>
+      <a class="btn primary" href="kontakt.html">Aufenthalt anfragen</a>
+      <a class="btn secondary" href="warum-schoeneck.html">Mehr über Schöneck</a>
     </div>
   </div>
 </section>
 
 </main>
 
-<footer class="footer">
-  <div class="footer-grid">
-    <div>
-      <h2>Schöneck</h2>
-      <p>Ein Lebensraum, der über viele Jahre gewachsen ist. Für Menschen, die wieder spüren möchten, was für sie richtig ist.</p>
-      <p>Bruderndorferwald 6, 3921 Langschlag, Österreich<br>+43 (0) 2814 80 162<br><a href="mailto:info@schoeneckerhof.at">info@schoeneckerhof.at</a></p>
+<footer class="ftr">
+  <div class="hc">
+    <div class="fg">
+      <div class="fc">
+        <h5>Schöneck</h5>
+        <p>Ein Lebensraum, der über viele Jahre gewachsen ist. Für Menschen, die wieder spüren möchten, was für sie richtig ist.</p>
+        <p>Bruderndorferwald 6, 3921 Langschlag, Österreich<br>+43 (0) 2814 80 162<br><a href="mailto:info@schoeneckerhof.at">info@schoeneckerhof.at</a></p>
+      </div>
+      <div class="fc">
+        <h5>Bereiche</h5>
+        <ul>
+          <li><a href="erwachsene.html">Erwachsene</a></li>
+          <li><a href="kinder-jugendliche.html">Kinder & Jugendliche</a></li>
+          <li><a href="eltern.html">Eltern</a></li>
+          <li><a href="pflegeeltern.html">Pflegeeltern</a></li>
+          <li><a href="unternehmen.html">Unternehmen</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h5>Schöneck</h5>
+        <ul>
+          <li><a href="warum-schoeneck.html">Warum Schöneck</a></li>
+          <li><a href="unsere-tiere.html">Unsere Tiere</a></li>
+          <li><a href="unsere-familie.html">Unsere Familie</a></li>
+          <li><a href="der-hof.html">Der Hof</a></li>
+          <li><a href="perspektiven.html">Perspektiven</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="fc fn">
+        <h5>Newsletter</h5>
+        <p>Bleibe verbunden und erhalte Impulse & Neuigkeiten direkt aus dem Waldviertel.</p>
+        <div class="nli">
+          <input type="email" placeholder="Deine E-Mail-Adresse">
+          <button type="button">→</button>
+        </div>
+        <p style="margin-top:16px;font-size:.78rem;color:rgba(248,246,242,.35);">
+          +43 (0) 2814 80 162<br>info@schoeneckerhof.at
+        </p>
+      </div>
     </div>
-    <div><h3>Bereiche</h3><ul>
-      <li><a href="/erwachsene/">Erwachsene</a></li>
-      <li><a href="/kinder-jugendliche/">Kinder & Jugendliche</a></li>
-      <li><a href="/eltern/">Eltern</a></li>
-      <li><a href="/pflegeeltern/">Pflegeeltern</a></li>
-    </ul></div>
-    <div><h3>Schöneck</h3><ul>
-      <li><a href="/warum-schoeneck/">Warum Schöneck</a></li>
-      <li><a href="/perspektiven/">Perspektiven</a></li>
-      <li><a href="/kontakt/">Kontakt</a></li>
-    </ul></div>
-    <div><h3>Rechtliches</h3><ul>
-      <li><a href="/impressum/">Impressum</a></li>
-      <li><a href="/datenschutz/">Datenschutz</a></li>
-      <li><a href="/cookies/">Cookies</a></li>
-    </ul></div>
+    <div class="fbot">
+      <span>© 2025 SCHÖNECK GmbH · FN 559312v · Langschlag, Niederösterreich</span>
+      <div class="fbot-l">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
   </div>
-  <div class="container" style="margin-top:2.5rem;border-top:1px solid rgba(255,255,255,.13);padding-top:1rem;font-size:.85rem;">© 2026 SCHÖNECK GmbH. Alle Rechte vorbehalten.</div>
 </footer>
 
 <div class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie Hinweis">
@@ -238,10 +277,29 @@
   <div class="btnrow">
     <button class="btn primary" data-cookie-accept>Alle akzeptieren</button>
     <button class="btn secondary" data-cookie-decline>Nur notwendige</button>
-    <a class="btn secondary" href="/cookies/">Mehr erfahren</a>
+    <a class="btn secondary" href="cookies.html">Mehr erfahren</a>
   </div>
 </div>
 
-<script src="/assets/main.js"></script>
+<script src="assets/main.js"></script>
+<script>
+function toggleMob(){
+  const m=document.getElementById('navmob');
+  m.classList.toggle('open');
+}
+document.querySelectorAll('.fq').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const i=q.closest('.fi'),o=i.classList.contains('open');
+    document.querySelectorAll('.fi').forEach(x=>x.classList.remove('open'));
+    if(!o)i.classList.add('open');
+  });
+});
+const io=new IntersectionObserver(e=>{
+  e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')});
+},{threshold:.07});
+document.querySelectorAll('[data-f]').forEach(el=>io.observe(el));
+</script>
+
 </body>
 </html>
+`
